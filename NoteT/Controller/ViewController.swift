@@ -37,8 +37,7 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate, UITe
                                              text:   paramsTF.text!)
         
         let translator = ROGoogleTranslate()
-        translator.apiKey = "AIzaSyB_h42KeD9-XlyaTEFrSwCLKzKoLZJ1Uo8"
-        
+        translator.apiKey = API_KEY
         translator.translate(params: params) { (result) in
             print("Translation: \(result)")
             DispatchQueue.main.async {
@@ -57,34 +56,16 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate, UITe
             let alert = UIAlertController(title: "Błąd", message: "Tłumaczony test jest taki sam jak odpowiedz, chcesz dodać słowo", preferredStyle: .actionSheet)
             let action1 = UIAlertAction(title: "Nie", style: .cancel, handler: nil)
             let action2 = UIAlertAction(title: "Tak", style: .destructive, handler: { (action) in
-                let word = Word(context: context)
+            
+                self.addWord(title: title!)
                 
-                word.title = title
-                word.from = self.source
-                word.toTranslate = self.targer
-                word.translate = self.testLb
-                
-                ad.saveContext()
             })
             alert.addAction(action1)
             alert.addAction(action2)
             present(alert, animated: true, completion: nil)
             
-            
-            
-            
-            
-            
-            
-        } else {
-            let word = Word(context: context)
-            
-            word.title = title
-            word.from = source
-            word.toTranslate = targer
-            word.translate = testLb
-            
-            ad.saveContext()
+            } else {
+            self.addWord(title: title!)
         }
     }
     
@@ -126,6 +107,19 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate, UITe
         textField.resignFirstResponder()
         return true
     }
+    
+    func addWord(title: String){
+        let word = Word(context: context)
+        
+        word.title = title
+        word.from = self.source
+        word.toTranslate = self.targer
+        word.translate = self.testLb
+        
+        ad.saveContext()
+    }
+    
+ 
 }
     
 

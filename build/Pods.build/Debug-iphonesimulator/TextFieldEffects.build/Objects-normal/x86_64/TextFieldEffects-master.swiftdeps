@@ -1,0 +1,14 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "5274e9faaf783fa10cb3ec489f0a55b3"
+build_time: [1518381625, 365232000]
+inputs:
+  "/Users/karolzmyslowski/Desktop/NoteT/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [1518283413, 0]
+  "/Users/karolzmyslowski/Desktop/NoteT/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [1518283413, 0]
+  "/Users/karolzmyslowski/Desktop/NoteT/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/IsaoTextField.swift": [1518283413, 0]
+  "/Users/karolzmyslowski/Desktop/NoteT/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/JiroTextField.swift": [1518283413, 0]
+  "/Users/karolzmyslowski/Desktop/NoteT/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/KaedeTextField.swift": [1518283413, 0]
+  "/Users/karolzmyslowski/Desktop/NoteT/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MadokaTextField.swift": [1518283413, 0]
+  "/Users/karolzmyslowski/Desktop/NoteT/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MinoruTextField.swift": [1518283413, 0]
+  "/Users/karolzmyslowski/Desktop/NoteT/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/TextFieldEffects.swift": [1518283413, 0]
+  "/Users/karolzmyslowski/Desktop/NoteT/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YokoTextField.swift": [1518283413, 0]
+  "/Users/karolzmyslowski/Desktop/NoteT/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YoshikoTextField.swift": [1518283413, 0]
