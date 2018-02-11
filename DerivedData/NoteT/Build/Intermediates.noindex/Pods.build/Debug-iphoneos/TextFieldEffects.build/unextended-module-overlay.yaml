@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/karolzmyslowski/Desktop/Core_iOS/NoteT/DerivedData/NoteT/Build/Products/Debug-iphoneos/TextFieldEffects/TextFieldEffects.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/karolzmyslowski/Desktop/Core_iOS/NoteT/DerivedData/NoteT/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/TextFieldEffects.build/unextended-module.modulemap',
+    }]
+  }]
+}

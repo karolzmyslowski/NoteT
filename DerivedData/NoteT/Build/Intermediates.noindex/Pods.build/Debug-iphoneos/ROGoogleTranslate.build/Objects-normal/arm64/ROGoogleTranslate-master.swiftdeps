@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "d898f591b8d29f7b2843fb6fc688bb22"
+build_time: [1518305669, 475816000]
+inputs:
+  "/Users/karolzmyslowski/Desktop/Core_iOS/NoteT/Pods/ROGoogleTranslate/Source/ROGoogleTranslate.swift": [1518175964, 0]

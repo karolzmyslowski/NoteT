@@ -1,0 +1,15 @@
+PODS:
+  - ROGoogleTranslate (0.0.5)
+  - TextFieldEffects (1.4.0)
+
+DEPENDENCIES:
+  - ROGoogleTranslate
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  ROGoogleTranslate: 344d579487c21af1ae54138baa68605b861ba84e
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+
+PODFILE CHECKSUM: fd2c0798527737aa3927056b5d384454b06ca5b0
+
+COCOAPODS: 1.4.0
