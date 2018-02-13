@@ -1,3 +1,0 @@
-# NoteT
-
-Karol Zmysłowski

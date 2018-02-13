@@ -57,14 +57,14 @@ open class ROGoogleTranslate {
             
                 let httprequest = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
                     guard error == nil else {
-                        print("Something went wrong: \(error?.localizedDescription)")
+                        print("Something went wrong")
                         return
                     }
                     
                     if let httpResponse = response as? HTTPURLResponse {
                         
                         guard httpResponse.statusCode == 200 else {
-                            print("Something went wrong: \(data)")
+                            print("Something went wrong")
                             return
                         }
                         
