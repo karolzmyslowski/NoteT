@@ -15,6 +15,8 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var fromLbn: UILabel!
     @IBOutlet weak var toLnb: UILabel!
     @IBOutlet weak var translateLbn: UILabel!
+    @IBOutlet weak var starLbn: UILabel!
+    
     
     
     func configureCell(item: Word) {
@@ -22,5 +24,6 @@ class TableViewCell: UITableViewCell {
         fromLbn.text = item.from
         toLnb.text = item.toTranslate
         translateLbn.text = item.translate
+        starLbn.text =  item.star ? "☆" : ""
     }
 }

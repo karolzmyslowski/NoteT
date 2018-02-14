@@ -142,6 +142,7 @@
                         <color key="badgeColor" red="0.24313725490196078" green="0.55686274509803924" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="dodajBtn" destination="Mbp-hD-0lY" id="oGH-jU-yXJ"/>
                         <outlet property="leftLng" destination="z2Z-PS-YUp" id="yIV-TG-DDl"/>
                         <outlet property="paramsTF" destination="Vu2-9h-KJ1" id="nAG-dG-UYW"/>
                         <outlet property="rightLng" destination="b31-WN-a5I" id="bkZ-UA-L2x"/>
@@ -218,7 +219,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" ☆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxH-ew-XMX">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" ☆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="TxH-ew-XMX">
                                                     <rect key="frame" x="329" y="25" width="31" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
@@ -245,6 +246,7 @@
                                         <connections>
                                             <outlet property="fromLbn" destination="R1u-BK-VgN" id="Cbm-jP-eUQ"/>
                                             <outlet property="mainLabel" destination="eba-gR-Yfa" id="QxY-6d-QZ3"/>
+                                            <outlet property="starLbn" destination="TxH-ew-XMX" id="CGh-lh-9Yv"/>
                                             <outlet property="toLnb" destination="0Pg-dd-J97" id="9KR-TM-WOJ"/>
                                             <outlet property="translateLbn" destination="E8F-qj-BdD" id="NDi-l3-xfT"/>
                                         </connections>

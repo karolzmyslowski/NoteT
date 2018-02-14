@@ -16,6 +16,7 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate, UITe
     @IBOutlet weak var paramsTF: MadokaTextField!
     @IBOutlet weak var leftLng: UILabel!
     @IBOutlet weak var rightLng: UILabel!
+    @IBOutlet weak var dodajBtn: translateButton!
     
     var source:String!
     var targer:String!
@@ -45,27 +46,19 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate, UITe
             self.testLb = self.testlabel.text
             }
         }
+        dodajBtn.isEnabled = true
+        
     }
         @IBAction func addBtn(_ sender: Any) {
        
         let title = paramsTF.text
         
-        if title == testLb {
+        if title == testLb && title != "" {
         //ALERT
-        
-            let alert = UIAlertController(title: "Błąd", message: "Tłumaczony test jest taki sam jak odpowiedz, chcesz dodać słowo", preferredStyle: .actionSheet)
-            let action1 = UIAlertAction(title: "Nie", style: .cancel, handler: nil)
-            let action2 = UIAlertAction(title: "Tak", style: .destructive, handler: { (action) in
-            
-                self.addWord(title: title!)
-                
-            })
-            alert.addAction(action1)
-            alert.addAction(action2)
-            present(alert, animated: true, completion: nil)
-            
+            addAlert(title: title!)
             } else {
             self.addWord(title: title!)
+            addAlert2()
         }
     }
     
@@ -115,11 +108,31 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate, UITe
         word.from = self.source
         word.toTranslate = self.targer
         word.translate = self.testLb
+        word.star = false
         
         ad.saveContext()
     }
-    
- 
+    func addAlert(title: String) {
+        let alert = UIAlertController(title: "Błąd", message: "Tłumaczony test jest taki sam jak odpowiedz, chcesz dodać słowo", preferredStyle: .actionSheet)
+        let action1 = UIAlertAction(title: "Nie", style: .cancel, handler: nil)
+        let action2 = UIAlertAction(title: "Tak", style: .destructive, handler: { (action) in
+            
+            self.addWord(title: title)
+            
+        })
+        alert.addAction(action1)
+        alert.addAction(action2)
+        present(alert, animated: true, completion: nil)
+    }
+    func addAlert2() {
+        let alert = UIAlertController(title: "Gotowe", message: "Test został dodany", preferredStyle: .alert)
+        let action1 = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(action1)
+        present(alert, animated: true, completion: nil)
+    }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        dodajBtn.isEnabled = false
+    }
 }
     
 

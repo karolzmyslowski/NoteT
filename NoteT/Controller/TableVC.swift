@@ -66,6 +66,12 @@ class TableVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let obj = controller.fetchedObjects {
+            let item = obj[indexPath.row]
+            changeStarValue(item: item)
+        }
+    }
 
 
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
@@ -126,5 +132,12 @@ class TableVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
             break
         }
     }
-  
+    func changeStarValue(item: Word){
+        if item.star == true{
+            item.star = false
+        } else {
+            item.star = true
+        }
+        ad.saveContext()
+    }
 }
