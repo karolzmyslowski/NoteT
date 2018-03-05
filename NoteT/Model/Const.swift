@@ -9,5 +9,5 @@
 import Foundation
 
 
-let API_KEY = "AIzaSyB_h42KeD9-XlyaTEFrSwCLKzKoLZJ1Uo8"
+let API_KEY = "AIzaSyBlsLIxm5XnHcvm-EFnClBLMGMTv4Ja0Pg"
 
